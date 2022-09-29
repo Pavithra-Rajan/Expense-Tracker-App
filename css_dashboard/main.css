@@ -12,7 +12,10 @@
              .main-dashboardContainer, .main-dashboardMobileContainer {
                background-color: #f7f7f7 !important;
              }
-
+            
+             li{
+              font-size: 16px;
+             }
              .main-header #main-viewAll {
               /*width: 192px !important;*/
              }
@@ -43,7 +46,7 @@
              /* Set gray background color and 100% height */
                  
              .sidenav {
-               background: #b5ecec;
+               background: #0C98BA;
              }
 
               #nav{
@@ -75,7 +78,7 @@
              .nav-stacked li.active a:hover,
              .nav-stacked li.active a:active,
              .nav-stacked li.active a:focus {
-               background: #0C98BA;
+               background: #b5ecec;
                color: black;
              }
              
