@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');     
      body {
                font-weight: 300;
                background-color: #f7f7f7 !important;
-               font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif, Arial, Verdana !important;
-             }
+               font-family: 'Montserrat', sans-serif;
+               margin :0;
+                
+              }
 
              #main-moreInfoLink  {
              /* top: 125px !important;*/
@@ -46,11 +49,13 @@
              /* Set gray background color and 100% height */
                  
              .sidenav {
-               background: #0C98BA;
+              background: linear-gradient(to bottom, #02aab0, #00cdac);
              }
 
               #nav{
                 max-height: 2200px;
+                position: sticky;
+                
               }         
              .nav-stacked {
                margin-top: 35px;
@@ -184,12 +189,12 @@
             }
              .table {
                width: 100%;
-               border: 1px solid #0C98BA;
+               border: 1px solid #02aab0;
             }
              .table-header {
                display: flex;
                width: 100%;
-               background: #0C98BA;
+               background: #02aab0;
                padding: 18px 0;
             }
              .table-row {
@@ -199,7 +204,7 @@
                border-width: 2px;
             }
              .table-row:nth-of-type(even) {
-               background: #dff7fd;
+               background: #defeff;
             }
              .table-data, .header__item {
                flex: 1 1 20%;
