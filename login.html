@@ -14,7 +14,6 @@
 	<h1>Create a new account</h1>
 	<input type="text" name="name" placeholder="Name">
 	<input type="email" name="email" placeholder="Email">
-	<input type="password" name="password" placeholder="Password">
 	<button>Sign Up</button>
 </form>
 </div>
@@ -24,7 +23,7 @@
 		
         <input type="email" name="email" placeholder="Email">
         <input type="password" name="password" placeholder="Password">
-        <a href="#">Forgot Your Password?</a>
+        <a href="forgotpassword.html">Forgot Your Password?</a>
 
         <button>Sign In</button>
 	</form>
@@ -34,15 +33,15 @@
 		<!--Maybe we should switch these two messages? It looks a bit confusing when sign in message is shown for sign up and vice
 		versa. We can switch messages and say OR <do other thing at the bottom> -->
 		<div class="overlay-panel overlay-left">
-			<h1>Welcome Back!</h1>
-			<p>Log in to your account to keep track of your personal expenses</p>
-            <img src="assets/expenses.png" width="200px"/>
-			<button class="ghost" id="signIn">Sign In</button>
-		</div>
-		<div class="overlay-panel overlay-right">
 			<h1>Are You New Here?</h1>
 			<p>Enter your details and start your journey in tracking your expenses</p>
             <img src="assets/piggybank.png" width="200px"/>
+			<button class="ghost" id="signIn">Sign In</button>
+		</div>
+		<div class="overlay-panel overlay-right">
+			<h1>Welcome Back!</h1>
+			<p>Log in to your account to keep track of your personal expenses</p>
+            <img src="assets/expenses.png" width="200px"/>
 			<button class="ghost" id="signUp">Sign Up</button>
 		</div>
 	</div>
