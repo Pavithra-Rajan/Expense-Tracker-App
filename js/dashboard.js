@@ -117,7 +117,6 @@ $(document).ready(function() {
   
   });
 
-  
 
   $("#expense-bar-container").insertFusionCharts({
     type: 'column2d',

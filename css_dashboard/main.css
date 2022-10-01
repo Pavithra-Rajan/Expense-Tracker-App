@@ -6,6 +6,9 @@
                margin :0;
                 
               }
+              label{
+                margin-top: 2%;
+              }
 
              #main-moreInfoLink  {
              /* top: 125px !important;*/
@@ -106,10 +109,17 @@
              hr {
                margin: 10px 0 15px;
              }
+
+             #delet{
+              font-family: 'Montserrat', sans-serif; 
+              background-color:	#DC3545;
+              border: 1px solid #DC3545;
+              margin-top: 0%;
+             }
              
              button {
-              border-radius: 20px;
-                margin-top: 2%;
+              border-radius: 15px;
+              margin-top: 2%;
               border: 1px solid #02aab0;
               background-color: #02aab0;
               color: #FFFFFF;

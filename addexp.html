@@ -21,6 +21,7 @@
 
 <script type="text/javascript" src="js/dashboard.js"></script>  
 <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+
 </head>
 <body>
     <!-- 
@@ -33,6 +34,7 @@
     <nav class="navbar navbar-default visible-xs">
       <div class="container-fluid">
         <div class="navbar-header">
+
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -41,8 +43,10 @@
            <button type="button" class="navbar-toggle user-info" data-toggle="collapse" data-target="#useInfo">
             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>   
           </button>
+          
         </div>
-         <div class="collapse navbar-collapse" id="useInfo">
+
+        <div class="collapse navbar-collapse" id="useInfo">
           <ul class="nav navbar-nav">
             <li class="text-center">
             <h2 class="text-uppercase">Welcome</h2>
@@ -51,69 +55,74 @@
             </li>
           </ul>
         </div>
+        
         <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-              <li ><a href="#dashboard">Profile</a></li>
-              <li class="active"> <a href="#Audience Overview">Expense Overview</a> </li>
-              <li><a>Add Expenses</a></li>             
-          </ul>
+            <ul class="nav navbar-nav">
+                <li ><a href="profile.html">Profile</a></li>
+                <li class="active"> <a href="dashboard.html">Expense Overview</a> </li>
+                <li><a href="addexp.html">Add Expenses</a></li>             
+            </ul>
         </div>
       </div>
     </nav>
-        
-        <div class="container-fluid">
-          <div class="row content">
-            <div class="col-sm-3 col-md-3 col-lg-2  sidenav hidden-xs clearfix" id="nav" style="height: 100vh; overflow: absolute;">
-             
-              <div data-spy="affix" data-offset-top="0" class="sidenav-container">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <p></p>
-                  </div>
-                </div>
-               
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-5">
-                      <img src="assets/PR.png" alt="" width="70" height="70" style="border-radius:50px">
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-7" style="margin-top:20px">
-                      <div class="text-capitalize" style="color: #b5ecec; font-size: 18px; font-weight: bold;">Welcome!</div>
-                      <div class="text" style="color: white; font-size: 15px; ">Pavithra Rajan</div>
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <ul class="nav nav-pills nav-stacked">
-                        <li ><a href="#dashboard">Profile</a></li>
-                        <li> <a href="dashboard.html">Expense Overview</a> </li>
-                        <li class="active"><a>Add Expenses</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
 
-              <br>
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="col-sm-3 col-md-3 col-lg-2  sidenav hidden-xs clearfix" id="nav" style="height: 100vh; overflow: absolute;">
+          <div data-spy="affix" data-offset-top="0" class="sidenav-container">
+            <div class="row">
+              <div class="col-sm-12">
+                <p></p>
+              </div>
+            </div>
+            
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                  <img src="assets/PR.png" alt="" width="70" height="70" style="border-radius:50px">
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-7" style="margin-top:20px">
+                  <div class="text-capitalize" style="color: #b5ecec; font-size: 18px; font-weight: bold;">Welcome!</div>
+                  <div class="text" style="color: white; font-size: 15px; ">Pavithra Rajan</div>
+                </div>
 
             </div>
-            <br>
-            <div class="col-sm-9 col-md-9 col-lg-10" id="contemt-main">
-              
-              <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="dashboard">
-                  
-                  <h1>Add expenses</h1>
 
-                </div>
-                
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="nav nav-pills nav-stacked">
+                    <li ><a href="profile.html">Profile</a></li>
+                    <li> <a href="dashboard.html">Expense Overview</a> </li>
+                    <li class="active"><a href="addexp.html">Add Expenses</a></li>
+                </ul>
               </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <hr>
-                </div>
-              </div>
+            </div>
+          </div>
+
+          <br>
+
+        </div>
+        <br>
+
+        <div class="col-sm-9 col-md-9 col-lg-10" id="contemt-main">
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="dashboard">
+              <h1>Add expenses</h1>
+            </div>
             
-          <div class="col-sm-4">
-            <label style="font-size: 16px;">Date:</label>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <hr>
+            </div>
+
+          </div>
+        
+          <div class="col-sm-6">
+            <label>Date:</label>
           <div class='input-group date' id='datetimepicker6'>
 
             <input type='text' class="form-control" value="01/06/2022" data-provide="datepicker"  />
@@ -121,13 +130,33 @@
                           <span class="glyphicon glyphicon-calendar"></span>
             </span>
           </div>
-          <img src="assets/forgotpass.png" width="200px"/>
+    
+          <label>Spent on:</label>
+          <select class="form-control">
+            <option>Food</option>
+            <option>Entertainment</option>
+            <option>Education and Accommodation</option>
+            <option>Transportation</option>
+            <option>Clothing and Shopping</option>
+          </select>
+
+          <label>Amount in Rs.:</label>
+          <input type='number' class="form-control" min="1" placeholder="Amount"/>
+
+          <label for="remarksText">Remarks (if any):</label>
+          <textarea class="form-control" id="remarksText" rows="3" placeholder="Details on where the money was spent"></textarea>
+          <button type="button" style="border-radius:15px; display: block; margin:0 auto; margin-top: 3%;">SUBMIT</button>
+
           </div>
-        </div>     
+          <div class="col-sm-6">
+            <img src="assets/forgotpass.png" width="500px" style="display: block; margin:0 auto; margin-top: -10%;"/>
+          </div>
+          
+          </div>
+      </div>     
     </div>
 </div>
 
-        
 </body>
 
 </html>
