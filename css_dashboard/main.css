@@ -107,6 +107,34 @@
                margin: 10px 0 15px;
              }
              
+             button {
+              border-radius: 20px;
+                margin-top: 2%;
+              border: 1px solid #02aab0;
+              background-color: #02aab0;
+              color: #FFFFFF;
+              font-size: 12px;
+              font-weight: bold;
+              padding: 10px 45px;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              transition: transform 80ms ease-in;
+            }
+            
+            button:active {
+              transform: scale(0.95);
+            }
+            
+            button:focus {
+              outline: none;
+            }
+            
+            button.ghost {
+              background-color: transparent;
+              border-color: #FFFFFF;
+                margin-top: 15px;
+            }
+             
              .well {
                background: #ffffff;
                box-shadow: none
@@ -236,5 +264,15 @@
             }
              .filter__link.asc::after {
                content: '(asc)';
+            }
+
+            .flex-box {
+              display:flex;
+              justify-content:space-between;
+            }
+            
+            .flex-box-2 {
+              display:flex;
+              justify-content: flex-end;
             }
              
