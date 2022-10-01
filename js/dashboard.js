@@ -117,6 +117,7 @@ $(document).ready(function() {
   
   });
 
+  
 
   $("#expense-bar-container").insertFusionCharts({
     type: 'column2d',
@@ -193,14 +194,20 @@ $(document).ready(function() {
   $(function() {
     //Maximum  date for which the analytic could be done
     var max_pickup_Date = new Date();
-    var maxDate = new Date(new Date(max_pickup_Date).setMonth(max_pickup_Date.getMonth()-1));
+    var maxDate = new Date(new Date(max_pickup_Date).setMonth(max_pickup_Date.getMonth()));
     
     $('#datetimepicker6').datetimepicker({
       format:'DD/MM/YYYY',
       maxDate : maxDate
     });
     //Setting the defailt date 
-    $('#datetimepicker6').data("DateTimePicker").date(new Date('1 July 2016'));  
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = dd + '/' + mm + '/' + yyyy;
+    $('#datetimepicker6').data("DateTimePicker").date(today);  
     
     $('#datetimepicker7').datetimepicker({
       format:'DD/MM/YYYY'

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>User Dashboard</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="charts/fusioncharts.js"></script>
+<script type="text/javascript" src="charts/themes/fusioncharts.theme.zune.js?cacheBust=56"></script>
+<script type="text/javascript" src="charts/fusioncharts.jqueryplugin.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css_dashboard/bootstrap.min.css">    
+<link rel="stylesheet" type="text/css" href="css_dashboard/bootstrap-theme.min.css">  
+<link rel="stylesheet" type="text/css" href="css_dashboard/bootstrap-datetimepicker.css">
+<link rel="stylesheet" type="text/css" href="css_dashboard/main.css">
+
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/moment-with-locales.js"></script>
+
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+
+<script type="text/javascript" src="js/dashboard.js"></script>  
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+</head>
+<body>
+    <!-- 
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 hidden" id="loader">
+           <center>
+              <img src="assets/ajax-loader.gif">
+            </center>
+        </div>
+    -->
+    <nav class="navbar navbar-default visible-xs">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <button type="button" class="navbar-toggle user-info" data-toggle="collapse" data-target="#useInfo">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>   
+          </button>
+        </div>
+         <div class="collapse navbar-collapse" id="useInfo">
+          <ul class="nav navbar-nav">
+            <li class="text-center">
+            <h2 class="text-uppercase">Welcome</h2>
+            <img src="assets/PR.png" alt="" width="70" height="70" style="border-radius:50px">
+            <div class="text-uppercase">Pavithra Rajan</div>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+              <li ><a href="#dashboard">Profile</a></li>
+              <li class="active"> <a href="#Audience Overview">Expense Overview</a> </li>
+              <li><a>Add Expenses</a></li>             
+          </ul>
+        </div>
+      </div>
+    </nav>
+        
+        <div class="container-fluid">
+          <div class="row content">
+            <div class="col-sm-3 col-md-3 col-lg-2  sidenav hidden-xs clearfix" id="nav" style="height: 100vh; overflow: absolute;">
+             
+              <div data-spy="affix" data-offset-top="0" class="sidenav-container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p></p>
+                  </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                      <img src="assets/PR.png" alt="" width="70" height="70" style="border-radius:50px">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-7" style="margin-top:20px">
+                      <div class="text-capitalize" style="color: #b5ecec; font-size: 18px; font-weight: bold;">Welcome!</div>
+                      <div class="text" style="color: white; font-size: 15px; ">Pavithra Rajan</div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li ><a href="#dashboard">Profile</a></li>
+                        <li> <a href="dashboard.html">Expense Overview</a> </li>
+                        <li class="active"><a>Add Expenses</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+            </div>
+            <br>
+            <div class="col-sm-9 col-md-9 col-lg-10" id="contemt-main">
+              
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="dashboard">
+                  
+                  <h1>Add expenses</h1>
+
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr>
+                </div>
+              </div>
+            
+          <div class="col-sm-4">
+            <label style="font-size: 16px;">Date:</label>
+          <div class='input-group date' id='datetimepicker6'>
+
+            <input type='text' class="form-control" value="01/06/2022" data-provide="datepicker"  />
+            <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+          <img src="assets/forgotpass.png" width="200px"/>
+          </div>
+        </div>     
+    </div>
+</div>
+
+        
+</body>
+
+</html>
