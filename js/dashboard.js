@@ -52,8 +52,6 @@ $(document).ready(function() {
     'date',
     'type',
     'amt',
-    'losses',
-    'total',
   ];
   
   $.each( properties, function( i, val ) {

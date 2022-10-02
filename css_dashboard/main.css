@@ -7,7 +7,7 @@
                 
               }
               label{
-                margin-top: 2%;
+                margin-top: 3%;
               }
 
              #main-moreInfoLink  {
@@ -241,9 +241,9 @@
                padding: 18px 0;
                border-width: 2px;
             }
-             .table-row:nth-of-type(even) {
+             /*.table-row:nth-of-type(odd) {
                background: #defeff;
-            }
+            }*/
              .table-data, .header__item {
                flex: 1 1 20%;
                text-align: center;

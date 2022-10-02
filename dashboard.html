@@ -62,7 +62,7 @@
     
     <div class="container-fluid">
       <div class="row content">
-        <div class="col-sm-3 col-md-3 col-lg-2  sidenav hidden-xs clearfix" style="min-height: 100vh; overflow: absolute;" id="nav">
+        <div class="col-sm-3 col-md-3 col-lg-2  sidenav hidden-xs clearfix" style="min-height: 100vh;" id="nav">
           
           <div data-spy="affix" data-offset-top="0" class="sidenav-container">
             <div class="row">
@@ -167,21 +167,77 @@
                     <div class="header__item"><a id="type" class="filter__link">Type</a></div>
                     <div class="header__item"><a id="amt" class="filter__link">Amount in Rs.</a></div>
                     <div class="header__item">Remarks</div>
+                    <div class="header__item"></div>
                   </div>
 
-                  <div class="table-content">	
+                  <div class="table-content" id="table-fill">
                     <div class="table-row">		
                       <div class="table-data">02 September 2022</div>
                       <div class="table-data">Education and Accommodation</div>
                       <div class="table-data">10000</div>
                       <div class="table-data">Paid hostel fees</div>
+                      <div class="table-data"><button type="button" data-toggle="modal" data-target="#editModal" style="margin-top: -2%;">
+                        Edit
+                      </button>
+                      </div>
                   </div>
+                  <!-- Modal -->
+                  
+                  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="modalTitle">Edit expense</h4>
+                          
+                        </div>
+                        <div class="modal-body" style="margin: 0 auto;float: none;">
+                          <form role="form">
+                            <div class="form-group" >
+                              <div class="input-group" id="profileEdits">
+        
+                                
+        
+                                <label>Date</label>
+                                <input type="text" class="form-control editField" value="02 September 2022" >
+                                <br>
+                                <p></p>
+        
+                                <label>Type</label>
+                                <input type="text" class="form-control editField" value="Education and Accommodation">
+                                <br>
+                                <p></p>
+        
+                                <label>Amount in Rs.</label>
+                                <input type="text" class="form-control editField" value="10000">
+                                <br>
+                                <p></p>
 
+                                <label>Remarks</label>
+                                <input type="text" class="form-control editField" value="Paid hostel fees">
+                                <br>
+                                <p></p>
+                                
+                              </div>
+                              
+                            </div>
+        
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" id="delet" data-dismiss="modal">Delete</button>
+                          <button type="button" id="editBtn" data-dismiss="modal">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                
                   <div class="table-row">
                     <div class="table-data">04 September 2022</div>
                     <div class="table-data">Transportation</div>
                     <div class="table-data">400</div>
                     <div class="table-data">Train ticket to Calicut</div>
+                    <div class="table-data"><button style="margin-top: -2%;">Edit</button></div>
                   </div>
 
                   <div class="table-row">
@@ -189,8 +245,9 @@
                     <div class="table-data">Clothing and Shopping</div>
                     <div class="table-data">730</div>
                     <div class="table-data">Spent at Hi-Lite mall</div>
+                    <div class="table-data"><button style="margin-top: -2%;">Edit</button></div>
                   </div>
-                </div>	
+                  </div>	
             </div>
         </div>
       </div>     
@@ -201,4 +258,14 @@
         
 </body>
 <script type="text/javascript" src="js/dashboard.js"></script>  
+<script>
+  // var data = [
+  //   {"date": "02 September 2022", "type":"Education and Accommodation", "amt":"10000", "rem":"Paid hostel fees"},
+  //   {"date": "04 September 2022", "type":"Transportation", "amt":"400", "rem":"Train ticket to Calicut"},
+  //   {"date": "07 September 2022", "type":"Clothing and Shopping", "amt":"730", "rem":"Spent at Hi-Lite Mall"},
+  //   {"date": "18 September 2022", "type":"Food", "amt":"210", "rem":"Momo Lush"}
+  // ];
+  // var id_name = document.getElementById("table-fill");
+  // data.forEach(element => id_name.insertAdjacentHTML('beforebegin', `<div class="table-row"><div class="table-data">${element.date}</div><div class="table-data">${element.type}</div><div class="table-data">${element.amt}</div><div class="table-data">${element.rem}</div><div class="table-data"><button style="margin-top: -2%;">Edit</button></div></div>`));
+</script>
 </html>
