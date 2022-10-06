@@ -136,7 +136,7 @@ $(document).ready(function() {
         "showValues": "1",
         "showLegend": "1",
         "divLineAlpha": "30",
-        "plotTooltext": "<b>Traffic Source: $label<br/>No. of users: $value</b>",
+        "plotTooltext": "<b>$label<br/>Rs. $value</b>",
         "theme": "zune"
       },
       "data": expense_chart_data//from data.js
