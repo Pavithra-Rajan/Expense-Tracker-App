@@ -25,3 +25,6 @@ A repository that contains the UI designs for the expense tracker application wh
 |Bootstrap|A CSS framework to support responsive development of pages|
 |Javascript|A programming language that gives the interactive element to a page|
 |Fusion Charts|A Javascript charting library to give dynamic and interactive charts and graphs|
+
+### Website Palette
+![palette](screenshots/FMS_pallete.PNG "Palette")
